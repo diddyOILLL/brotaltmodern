@@ -1,0 +1,11 @@
+.tools/
+.venv/
+__pycache__/
+*.tar.gz
+*.zip
+tools/photos-review.jpg
+tools/qa-*.png
+tools/qa-*.jpg
+assets/images/hero.webp
+.sites-local/
+outputs/

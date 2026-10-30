@@ -1,0 +1,81 @@
+{
+  "weizenbrot": {
+    "title": "Weißbrot-1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wei%C3%9Fbrot-1.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Wei%C3%9Fbrot-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Rainer Zenz",
+    "licenses": [
+      "CC BY-SA 3.0",
+      "CC BY-SA 2.5",
+      "GFDL"
+    ],
+    "width": 1600,
+    "height": 1200
+  },
+  "roggenbrot": {
+    "title": "100% Rye Bread (5752657009).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:100%25_Rye_Bread_%285752657009%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/2a/100%25_Rye_Bread_%285752657009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Veganbaking.net from USA",
+    "licenses": [
+      "CC BY-SA 2.0"
+    ],
+    "width": 1600,
+    "height": 1067
+  },
+  "vollkornbrot": {
+    "title": "Wholemeal tin loaf (8370566283).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wholemeal_tin_loaf_%288370566283%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Wholemeal_tin_loaf_%288370566283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "muffinn from Worcester, UK",
+    "licenses": [
+      "CC BY 2.0"
+    ],
+    "width": 1600,
+    "height": 1067
+  },
+  "dinkelbrot": {
+    "title": "Dinkelbrot (4212924064).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dinkelbrot_%284212924064%29.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Dinkelbrot_%284212924064%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Katrin Gilger",
+    "licenses": [
+      "CC BY-SA 2.0"
+    ],
+    "width": 1600,
+    "height": 1200
+  },
+  "baguette": {
+    "title": "Baguettes.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Baguettes.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Baguettes.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Kathryn Cartwright, edycja: niedzielny leń",
+    "licenses": [
+      "CC BY-SA 2.0"
+    ],
+    "width": 1600,
+    "height": 1052
+  },
+  "ciabatta": {
+    "title": "Ciabatta Bread.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ciabatta_Bread.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/43/Ciabatta_Bread.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Key West Wedding Photography",
+    "licenses": [
+      "CC BY 2.0"
+    ],
+    "width": 1600,
+    "height": 1084
+  },
+  "sauerteigbrot": {
+    "title": "Sourdough loaf",
+    "source": "https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU",
+    "original": "https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2",
+    "author": "Vicky Ng",
+    "licenses": [
+      "Unsplash License"
+    ],
+    "width": 1800,
+    "height": 2400
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "brotwelten",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neun eigenständige HTML-Seiten über die Welt des Brotes",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "python tools/verify.py",
+    "package": "python tools/package-project.py"
+  }
+}

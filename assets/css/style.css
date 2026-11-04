@@ -188,6 +188,8 @@ em { color: var(--copper); font-weight: 400; }
 .team-member { padding: 26px 0 0; border-top: 1px solid var(--line); }
 .team-member .team-number { color: var(--copper); font-family: var(--serif); font-size: 43px; }
 .team-member h3 { font-size: 31px; margin-block: 17px 10px; }
+.team-member .team-role { font-size: 12px; font-weight: 500; color: var(--copper); margin-bottom: 8px; }
+.team-member .team-contribution { font-size: 13px; line-height: 1.8; color: var(--muted); margin-bottom: 0; }
 .tech-section { background: var(--beige); padding: 48px; }
 .tech-section h2 { font-size: 44px; }
 .tech-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 35px; }

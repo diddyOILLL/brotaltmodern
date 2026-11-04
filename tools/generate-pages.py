@@ -246,7 +246,17 @@ def credits():
     return '\n'.join(entries)
 
 def about():
-    team = ''.join(f'<article class="team-member"><span class="team-number" aria-hidden="true">0{i}</span><h3>{name}</h3></article>' for i, name in enumerate(['Rico', 'Til', 'Otto'], start=1))
+    members = [
+        ('Rico', 'Leading Developer', ''),
+        ('Til', 'Bildrecherche & Designideen', 'Bilder ausgewählt, Designideen vorgeschlagen und bei der Programmierung mitgeholfen.'),
+        ('Otto', 'Bildrecherche & Designideen', 'Bilder ausgewählt, Designideen vorgeschlagen und bei der Programmierung mitgeholfen.'),
+    ]
+    team = ''.join(
+        f'<article class="team-member"><span class="team-number" aria-hidden="true">0{i}</span><h3>{name}</h3><p class="team-role">{escape(role)}</p>'
+        + (f'<p class="team-contribution">{escape(contribution)}</p>' if contribution else '')
+        + '</article>'
+        for i, (name, role, contribution) in enumerate(members, start=1)
+    )
     reading = ''.join(f'<li><a href="{b["source"]}" target="_blank" rel="noopener noreferrer">{b["source_title"]} ↗</a><span class="source-access">{SOURCE_ACCESS_HTML}</span></li>' for b in BREADS)
     page('ueber-uns', 'Über unser Projekt | Brotwelten', 'Brotwelten ist ein gemeinsames Projekt von Rico, Til und Otto. Entdecke sieben Brotsorten, ihre Herkunft, typische Eigenschaften und passende Rezeptlinks.', f'''
     <div class="container breadcrumb"><a href="index.html">Startseite</a><span aria-hidden="true">/</span><span>Über uns</span></div>

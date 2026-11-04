@@ -109,7 +109,8 @@ if __name__ == '__main__':
             seen[remote] = filename
         localcss.append('@font-face {' + block.replace(remote, '../fonts/' + seen[remote]) + '}')
     (ROOT / 'assets/css').mkdir(parents=True, exist_ok=True)
-    (ROOT / 'assets/css/fonts.css').write_text('\n'.join(localcss), encoding='utf-8')
+    fallback = "@font-face { font-family: 'Libre Caslon Fallback'; src: local('Georgia'); size-adjust: 82.8%; }\n"
+    (ROOT / 'assets/css/fonts.css').write_text(fallback + '\n'.join(localcss), encoding='utf-8')
     for folder in ['dmsans', 'librecaslondisplay']:
         (fonts / (folder + '-OFL.txt')).write_bytes(fetch('https://raw.githubusercontent.com/google/fonts/main/ofl/' + folder + '/OFL.txt'))
     print('Photographs and local fonts downloaded.', flush=True)

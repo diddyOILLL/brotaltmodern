@@ -155,6 +155,7 @@ def page(slug, title, description, body):
   <meta name="theme-color" content="#F8F5EF">
   <title>{title}</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/libre-caslon-display-400.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>

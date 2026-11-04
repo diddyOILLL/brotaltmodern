@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Libre Caslon Fallback';
+  src: local('Georgia');
+  size-adjust: 82.8%;
+}
+@font-face {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;

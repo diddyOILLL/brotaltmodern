@@ -5,7 +5,7 @@ Bilder heruntergeladen am 30. Oktober 2026. Zuletzt aufgerufen am 04.11.2026 (Bi
 Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; das Layout beschneidet sie mit `object-fit: cover`. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.
 
 ## Weizenbrot
-- Dateien: `assets/images/weizenbrot.webp`, `assets/images/weizenbrot-small.webp`
+- Dateien: `assets/images/weizenbrot.webp`, `assets/images/weizenbrot-small.webp`, `assets/images/weizenbrot-medium.webp`
 - Originaltitel: Weißbrot-1.jpg
 - Urheber: Rainer Zenz
 - Originalseite: https://commons.wikimedia.org/wiki/File:Wei%C3%9Fbrot-1.jpg
@@ -15,7 +15,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1200 px.
 
 ## Roggenbrot
-- Dateien: `assets/images/roggenbrot.webp`, `assets/images/roggenbrot-small.webp`
+- Dateien: `assets/images/roggenbrot.webp`, `assets/images/roggenbrot-small.webp`, `assets/images/roggenbrot-medium.webp`
 - Originaltitel: 100% Rye Bread (5752657009).jpg
 - Urheber: Veganbaking.net from USA
 - Originalseite: https://commons.wikimedia.org/wiki/File:100%25_Rye_Bread_%285752657009%29.jpg
@@ -25,7 +25,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1067 px.
 
 ## Vollkornbrot
-- Dateien: `assets/images/vollkornbrot.webp`, `assets/images/vollkornbrot-small.webp`
+- Dateien: `assets/images/vollkornbrot.webp`, `assets/images/vollkornbrot-small.webp`, `assets/images/vollkornbrot-medium.webp`
 - Originaltitel: Wholemeal tin loaf (8370566283).jpg
 - Urheber: muffinn from Worcester, UK
 - Originalseite: https://commons.wikimedia.org/wiki/File:Wholemeal_tin_loaf_%288370566283%29.jpg
@@ -35,7 +35,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1067 px.
 
 ## Dinkelbrot
-- Dateien: `assets/images/dinkelbrot.webp`, `assets/images/dinkelbrot-small.webp`
+- Dateien: `assets/images/dinkelbrot.webp`, `assets/images/dinkelbrot-small.webp`, `assets/images/dinkelbrot-medium.webp`
 - Originaltitel: Dinkelbrot (4212924064).jpg
 - Urheber: Katrin Gilger
 - Originalseite: https://commons.wikimedia.org/wiki/File:Dinkelbrot_%284212924064%29.jpg
@@ -45,7 +45,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1200 px.
 
 ## Baguette
-- Dateien: `assets/images/baguette.webp`, `assets/images/baguette-small.webp`
+- Dateien: `assets/images/baguette.webp`, `assets/images/baguette-small.webp`, `assets/images/baguette-medium.webp`
 - Originaltitel: Baguettes.jpg
 - Urheber: Kathryn Cartwright, edycja: niedzielny leń
 - Originalseite: https://commons.wikimedia.org/wiki/File:Baguettes.jpg
@@ -55,7 +55,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1052 px.
 
 ## Ciabatta
-- Dateien: `assets/images/ciabatta.webp`, `assets/images/ciabatta-small.webp`
+- Dateien: `assets/images/ciabatta.webp`, `assets/images/ciabatta-small.webp`, `assets/images/ciabatta-medium.webp`
 - Originaltitel: Ciabatta Bread.jpg
 - Urheber: Key West Wedding Photography
 - Originalseite: https://commons.wikimedia.org/wiki/File:Ciabatta_Bread.jpg
@@ -65,7 +65,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Optimierte große Fassung: 1600 × 1084 px.
 
 ## Sauerteigbrot
-- Dateien: `assets/images/sauerteigbrot.webp`, `assets/images/sauerteigbrot-small.webp`
+- Dateien: `assets/images/sauerteigbrot.webp`, `assets/images/sauerteigbrot-small.webp`, `assets/images/sauerteigbrot-medium.webp`
 - Originaltitel: Sourdough loaf
 - Urheber: Vicky Ng
 - Originalseite: https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU
@@ -74,7 +74,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1800 × 2400 px.
 
-Das Sauerteigmotiv wird mehrfach verwendet. `hero.webp` ist die heruntergeladene Ausgangsdatei dafür; die Website bindet die optimierten Sauerteigdateien ein.
+Das Sauerteigmotiv wird auf mehreren Seiten verwendet. Zu jedem Foto liegen eine kleine, eine mittlere und eine große WebP-Fassung vor; der Browser wählt die passende Größe.
 
 ## Schriften
 - Libre Caslon Display: https://fonts.google.com/specimen/Libre+Caslon+Display – Zuletzt aufgerufen am 04.11.2026.

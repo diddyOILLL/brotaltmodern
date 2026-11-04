@@ -10,7 +10,11 @@
       "GFDL"
     ],
     "width": 1600,
-    "height": 1200
+    "height": 1200,
+    "small_width": 700,
+    "small_height": 525,
+    "medium_width": 1100,
+    "medium_height": 825
   },
   "roggenbrot": {
     "title": "100% Rye Bread (5752657009).jpg",
@@ -21,7 +25,11 @@
       "CC BY-SA 2.0"
     ],
     "width": 1600,
-    "height": 1067
+    "height": 1067,
+    "small_width": 700,
+    "small_height": 467,
+    "medium_width": 1100,
+    "medium_height": 734
   },
   "vollkornbrot": {
     "title": "Wholemeal tin loaf (8370566283).jpg",
@@ -32,7 +40,11 @@
       "CC BY 2.0"
     ],
     "width": 1600,
-    "height": 1067
+    "height": 1067,
+    "small_width": 700,
+    "small_height": 467,
+    "medium_width": 1100,
+    "medium_height": 734
   },
   "dinkelbrot": {
     "title": "Dinkelbrot (4212924064).jpg",
@@ -43,7 +55,11 @@
       "CC BY-SA 2.0"
     ],
     "width": 1600,
-    "height": 1200
+    "height": 1200,
+    "small_width": 700,
+    "small_height": 525,
+    "medium_width": 1100,
+    "medium_height": 825
   },
   "baguette": {
     "title": "Baguettes.jpg",
@@ -54,7 +70,11 @@
       "CC BY-SA 2.0"
     ],
     "width": 1600,
-    "height": 1052
+    "height": 1052,
+    "small_width": 700,
+    "small_height": 460,
+    "medium_width": 1100,
+    "medium_height": 723
   },
   "ciabatta": {
     "title": "Ciabatta Bread.jpg",
@@ -65,7 +85,11 @@
       "CC BY 2.0"
     ],
     "width": 1600,
-    "height": 1084
+    "height": 1084,
+    "small_width": 700,
+    "small_height": 474,
+    "medium_width": 1100,
+    "medium_height": 745
   },
   "sauerteigbrot": {
     "title": "Sourdough loaf",
@@ -76,6 +100,10 @@
       "Unsplash License"
     ],
     "width": 1800,
-    "height": 2400
+    "height": 2400,
+    "small_width": 700,
+    "small_height": 933,
+    "medium_width": 1100,
+    "medium_height": 1467
   }
 }

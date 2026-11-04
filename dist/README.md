@@ -10,7 +10,7 @@ Alternativ mit installiertem Python im Projektordner `python -m http.server 4173
 
 ## Seiten
 
-- `index.html` – Startseite und sieben Brotporträts als Fotokarten
+- `index.html` – Startseite mit sieben Brotporträts als Fotokarten und einer Vergleichstabelle
 - `weizenbrot.html`, `roggenbrot.html`, `vollkornbrot.html`, `dinkelbrot.html`
 - `baguette.html`, `ciabatta.html`, `sauerteigbrot.html`
 - `ueber-uns.html` – Projekt, Team, Technik, Bildnachweise und Quellen
@@ -31,6 +31,6 @@ Warme Creme-, Braun- und Kupfertöne, lokale Serif- und Sans-Serif-Schriften, re
 
 ## Quellen und Prüfung
 
-Sieben konkrete Chefkoch-Rezeptseiten sind verlinkt; sie öffnen mit `target="_blank"` und `rel="noopener noreferrer"`. Es werden keine vollständigen Rezepte kopiert. Recherche und Quellen sind in `QUELLEN.md` dokumentiert. Fotos von Wikimedia Commons und Unsplash sind lokal als WebP in zwei Größen gespeichert. Die Schriften stehen unter der SIL Open Font License; die Lizenztexte liegen in `assets/fonts/`.
+Sieben konkrete Chefkoch-Rezeptseiten sind verlinkt; sie öffnen mit `target="_blank"` und `rel="noopener noreferrer"`. Es werden keine vollständigen Rezepte kopiert. Recherche und Quellen sind in `QUELLEN.md` dokumentiert. Fotos von Wikimedia Commons und Unsplash sind lokal als WebP in drei Größen gespeichert. Die Schriften stehen unter der SIL Open Font License; die Lizenztexte liegen in `assets/fonts/`.
 
 Das Paket enthält die neun HTML-Seiten, die lokalen Bilder und Schriften, die CSS-Dateien sowie diese Anleitung und die Quellenverzeichnisse. Alle Inhalte und Gestaltungsregeln können direkt in den HTML- und CSS-Dateien bearbeitet werden.

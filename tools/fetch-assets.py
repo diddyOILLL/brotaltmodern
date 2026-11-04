@@ -64,19 +64,25 @@ if __name__ == '__main__':
             photo.thumbnail((1600, 1600))
             photo.save(images / (slug + '.webp'), 'WEBP', quality=83, method=6)
         thumb = photo.copy()
-        thumb.thumbnail((700, 700))
+        thumb.thumbnail((700, 10000))
         thumb.save(images / (slug + '-small.webp'), 'WEBP', quality=80, method=6)
+        medium = photo.copy()
+        medium.thumbnail((1100, 10000))
+        medium.save(images / (slug + '-medium.webp'), 'WEBP', quality=81, method=6)
         license_names = [clean(x) for x in licenses]
         license_names.sort(key=lambda value: not value.startswith('CC'))
-        metadata[slug] = {'title': filename, 'source': url, 'original': original, 'author': clean(author.group(1)) if author else '', 'licenses': license_names, 'width': photo.width, 'height': photo.height}
+        metadata[slug] = {'title': filename, 'source': url, 'original': original, 'author': clean(author.group(1)) if author else '', 'licenses': license_names, 'width': photo.width, 'height': photo.height, 'small_width': thumb.width, 'small_height': thumb.height, 'medium_width': medium.width, 'medium_height': medium.height}
     if not (images / 'hero.webp').exists():
         (images / 'hero.webp').write_bytes(fetch('https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2?auto=format&fit=crop&w=1800&q=85&fm=webp'))
     photo = Image.open(images / 'hero.webp').convert('RGB')
     photo.save(images / 'sauerteigbrot.webp', 'WEBP', quality=84, method=6)
     thumb = photo.copy()
-    thumb.thumbnail((700, 700))
+    thumb.thumbnail((700, 10000))
     thumb.save(images / 'sauerteigbrot-small.webp', 'WEBP', quality=80)
-    metadata['sauerteigbrot'] = {'title': 'Sourdough loaf', 'source': 'https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU', 'original': 'https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2', 'author': 'Vicky Ng', 'licenses': ['Unsplash License'], 'width': photo.width, 'height': photo.height}
+    medium = photo.copy()
+    medium.thumbnail((1100, 10000))
+    medium.save(images / 'sauerteigbrot-medium.webp', 'WEBP', quality=81, method=6)
+    metadata['sauerteigbrot'] = {'title': 'Sourdough loaf', 'source': 'https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU', 'original': 'https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2', 'author': 'Vicky Ng', 'licenses': ['Unsplash License'], 'width': photo.width, 'height': photo.height, 'small_width': thumb.width, 'small_height': thumb.height, 'medium_width': medium.width, 'medium_height': medium.height}
     # Persist actual fetched provenance, never guessed image credits.
     (ROOT / 'tools/image-metadata.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     sheet = Image.new('RGB', (1200, 840), '#F8F5EF')

@@ -13,7 +13,6 @@ for source in files:
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, destination)
 with zipfile.ZipFile(ROOT / 'Brotwelten.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
-    source_extras = [p for p in (ROOT / 'tools').iterdir() if p.is_file() and p.suffix in ['.py', '.json', '.md']]
-    for source in files + source_extras:
+    for source in files:
         archive.write(source, Path('brotwelten') / source.relative_to(ROOT))
 print(f'Prepared dist/ and Brotwelten.zip ({len(files)} files).')

@@ -33,6 +33,4 @@ Warme Creme-, Braun- und Kupfertöne, lokale Serif- und Sans-Serif-Schriften, re
 
 Sieben konkrete Chefkoch-Rezeptseiten sind verlinkt; sie öffnen mit `target="_blank"` und `rel="noopener noreferrer"`. Es werden keine vollständigen Rezepte kopiert. Recherche und Quellen sind in `QUELLEN.md` dokumentiert. Fotos von Wikimedia Commons und Unsplash sind lokal als WebP in zwei Größen gespeichert. Die Schriften stehen unter der SIL Open Font License; die Lizenztexte liegen in `assets/fonts/`.
 
-`python tools/verify.py` prüft die neun Seiten, interne Links und Anker, lokale Assets, Rücklinks und externe Linkattribute. Browserprüfungen sind in `tools/QA.md` dokumentiert.
-
-Die Hilfsprogramme unter `tools/` sind optional. `generate-pages.py` ist eine Entwicklungshilfe; Änderungen an seiner Datenbasis überschreiben beim erneuten Ausführen die HTML-Dateien. Für den Schulbetrieb wird es nicht benötigt. `package-project.py` aktualisiert die ZIP und die Kopie unter `dist/` für das Hosting. Die eigentliche Website kann immer direkt aus den neun HTML-Dateien verwendet werden.
+Das Paket enthält die neun HTML-Seiten, die lokalen Bilder und Schriften, die CSS-Dateien sowie diese Anleitung und die Quellenverzeichnisse. Alle Inhalte und Gestaltungsregeln können direkt in den HTML- und CSS-Dateien bearbeitet werden.

@@ -1,9 +1,14 @@
 """Optional editing helper. The generated HTML files need no build or Python."""
 from pathlib import Path
+from datetime import date
 import json
 from html import escape
 
 ROOT = Path(__file__).resolve().parents[1]
+# Festes Recherchedatum, nur nach einem tatsächlichen Quellenaufruf ändern.
+SOURCE_ACCESS_DATE = date(2026, 11, 4)
+SOURCE_ACCESS_TEXT = 'Zuletzt aufgerufen am ' + SOURCE_ACCESS_DATE.strftime('%d.%m.%Y')
+SOURCE_ACCESS_HTML = f'Zuletzt aufgerufen am <time datetime="{SOURCE_ACCESS_DATE.isoformat()}">{SOURCE_ACCESS_DATE.strftime("%d.%m.%Y")}</time>'
 ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>'
 DOWN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>'
 DIAGONAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>'
@@ -171,7 +176,7 @@ def image(slug, alt, cls='', lazy=True, small=False):
 def card(b, i):
     return f'''<article class="bread-card{' featured' if i == 6 else ''}">
           <a class="card-photo" href="{b['slug']}.html" aria-label="{b['name']} entdecken">{image(b['slug'], b['alt'], small=True)}<span class="card-index" aria-hidden="true">0{i+1}</span></a>
-          <div class="card-copy"><div class="card-meta"><span>{b['region']}</span><span>{b['category_label']}</span></div>
+          <div class="card-copy"><p class="image-source-note"><a href="ueber-uns.html#bildnachweise">Bildquelle</a> · {SOURCE_ACCESS_HTML}</p><div class="card-meta"><span>{b['region']}</span><span>{b['category_label']}</span></div>
           <h3><a href="{b['slug']}.html">{b['name']}</a></h3><p>{b['short']}</p><a class="text-link" href="{b['slug']}.html" aria-label="Mehr über {b['name']} erfahren">Mehr erfahren {ARROW}</a></div>
         </article>'''
 
@@ -190,7 +195,7 @@ def home():
         <figure class="hero-figure">
           {image('sauerteigbrot', BREADS[6]['alt'], 'hero-image', lazy=False)}
           <div class="hero-stamp" aria-hidden="true"><span>Mehl · Wasser</span><strong>& Zeit</strong><span>Gutes Handwerk</span></div>
-          <figcaption class="photo-caption"><span>Die Schönheit des Einfachen</span><span>Foto: Vicky Ng</span></figcaption>
+          <figcaption class="photo-caption"><span>Die Schönheit des Einfachen</span><span>Foto: Vicky Ng</span><span class="source-access"><a href="ueber-uns.html#bildnachweise">Bildquelle</a> · {SOURCE_ACCESS_HTML}</span></figcaption>
         </figure>
       </div>
       <div class="intro-strip" aria-label="Was dich erwartet"><div><strong>07</strong><span>Brotsorten im Porträt</span></div><div><strong>Wissen</strong><span>Von Herkunft bis Handwerk</span></div><div><strong>Rezepte</strong><span>Zum Selberbacken</span></div></div>
@@ -201,7 +206,7 @@ def home():
       <div class="bread-grid" id="brotsammlung">{cards}</div>
     </section>
     <section class="story-section" aria-labelledby="geschichte-titel"><div class="container story-grid">
-      <figure class="story-photo">{image('sauerteigbrot', BREADS[6]['alt'])}<figcaption>Wenige Zutaten. Viele Möglichkeiten.</figcaption></figure>
+      <figure class="story-photo">{image('sauerteigbrot', BREADS[6]['alt'])}<figcaption>Wenige Zutaten. Viele Möglichkeiten.<span class="source-access"><a href="ueber-uns.html#bildnachweise">Bildquelle</a> · {SOURCE_ACCESS_HTML}</span></figcaption></figure>
       <div class="story-copy"><p class="eyebrow">Mehr als ein Lebensmittel</p><h2 id="geschichte-titel">Ein Stück Brot.<br>Ein Stück <em>Kultur.</em></h2><p>Mehl, Wasser, Salz und ein wenig Zeit: Aus wenigen Zutaten entsteht etwas, das Menschen seit Jahrtausenden begleitet. Brot gehört zum Alltag und erzählt zugleich von Landschaften, Getreide und handwerklichen Traditionen.</p><p>Ob kräftiges Roggenbrot im Norden oder luftiges Ciabatta in Italien – jede Region hat ihre eigenen Antworten auf eine einfache Frage: Wie wird aus Korn ein gutes Brot?</p><a class="text-link" href="ueber-uns.html">Die Idee hinter Brotwelten {ARROW}</a></div>
     </div></section>
     <section class="closing container" aria-labelledby="abschluss-titel"><p class="eyebrow">Wissen, das Appetit macht</p><h2 id="abschluss-titel">Neugierig geworden?<br>Dann <em>brich ein Stück ab.</em></h2><p>Jedes Brotporträt führt dich auch zu einem passenden Rezept.</p><a class="text-link" href="weizenbrot.html">Mit Weizenbrot beginnen {ARROW}</a></section>
@@ -216,13 +221,13 @@ def breadpage(b, i):
     <div class="container breadcrumb" aria-label="Brotkrümelnavigation"><a href="index.html">Startseite</a><span aria-hidden="true">/</span><a href="index.html#brotsorten">Brotsorten</a><span aria-hidden="true">/</span><span>{b['name']}</span></div>
     <section class="detail-hero container" aria-labelledby="brot-titel"><div class="hero-grid">
       <div class="hero-copy"><p class="eyebrow">Brotporträt 0{i+1} / 07</p><h1 id="brot-titel">{b['name']}</h1><p class="lead">{b['subtitle']}</p><a class="text-link" href="#geschichte">Die Geschichte entdecken {DOWN}</a><div class="bread-tags"><span>{b['region']}</span><span>{b['category_label']}</span></div></div>
-      <figure class="hero-figure">{image(b['slug'], b['alt'], 'hero-image', lazy=False)}<figcaption class="photo-caption"><span>{b['name']} · Eine von vielen Varianten</span><a href="ueber-uns.html#bildnachweise">Bildnachweis ↗</a></figcaption></figure>
+      <figure class="hero-figure">{image(b['slug'], b['alt'], 'hero-image', lazy=False)}<figcaption class="photo-caption"><span>{b['name']} · Eine von vielen Varianten</span><a href="ueber-uns.html#bildnachweise">Bildnachweis ↗</a><span class="source-access">{SOURCE_ACCESS_HTML}</span></figcaption></figure>
     </div></section>
     <div class="container"><dl class="at-a-glance"><div><dt>Verwurzelt in</dt><dd>{b['origin']}</dd></div><div><dt>Im Mittelpunkt</dt><dd>{b['grain']}</dd></div><div><dt>Der Charakter</dt><dd>{b['taste']}</dd></div></dl>
-      <section class="article-section" id="geschichte" aria-labelledby="geschichte-titel"><div><p class="eyebrow">Herkunft & Geschichte</p><h2 id="geschichte-titel">{b['history_title']}</h2></div><div class="article-copy">{history}<p class="source-note">Zum Weiterlesen: <a href="{b['source']}" target="_blank" rel="noopener noreferrer">{b['source_title']} ↗</a></p></div></section>
+      <section class="article-section" id="geschichte" aria-labelledby="geschichte-titel"><div><p class="eyebrow">Herkunft & Geschichte</p><h2 id="geschichte-titel">{b['history_title']}</h2></div><div class="article-copy">{history}<p class="source-note">Zum Weiterlesen: <a href="{b['source']}" target="_blank" rel="noopener noreferrer">{b['source_title']} ↗</a><span class="source-access">{SOURCE_ACCESS_HTML}</span></p></div></section>
       <section class="article-section" aria-labelledby="charakter-titel"><div><p class="eyebrow">Von außen nach innen</p><h2 id="charakter-titel">Das macht<br>es <em>besonders.</em></h2><p class="pairing-note">{b['pairing']}</p></div><dl class="properties">{properties}</dl></section>
       <section class="facts-section" aria-labelledby="fakten-titel"><p class="eyebrow">Eine Scheibe Wissen</p><h2 id="fakten-titel">Schon gewusst?</h2><div class="facts-grid">{facts}</div></section>
-      <section class="recipe-section" aria-labelledby="rezept-titel"><div><p class="eyebrow">Vom Lesen zum Backen</p><h2 id="rezept-titel">Jetzt wird’s<br><em>handgemacht.</em></h2></div><div class="recipe-copy"><p>{b['recipe_note']} Das passende Rezept „{b['recipe_title']}“ findest du auf Chefkoch.</p><a class="button" href="{b['recipe']}" target="_blank" rel="noopener noreferrer">Rezept auf Chefkoch ansehen ↗</a><small>Externe Rezeptseite · öffnet in einem neuen Tab</small></div></section>
+      <section class="recipe-section" aria-labelledby="rezept-titel"><div><p class="eyebrow">Vom Lesen zum Backen</p><h2 id="rezept-titel">Jetzt wird’s<br><em>handgemacht.</em></h2></div><div class="recipe-copy"><p>{b['recipe_note']} Das passende Rezept „{b['recipe_title']}“ findest du auf Chefkoch.</p><a class="button" href="{b['recipe']}" target="_blank" rel="noopener noreferrer">Rezept auf Chefkoch ansehen ↗</a><small>Externe Rezeptseite · öffnet in einem neuen Tab</small><small class="source-access">{SOURCE_ACCESS_HTML}</small></div></section>
       <nav class="page-return" aria-label="Weiter entdecken"><a class="back-link" href="index.html">← Zurück zur Startseite</a><a class="next-link" href="{nxt['slug']}.html"><span>Nächstes Brotporträt</span>{nxt['name']} →</a></nav>
     </div>
 ''')
@@ -237,37 +242,37 @@ def credits():
         license_url = LICENSE_URLS.get(license_name)
         if not license_url:
             raise ValueError('Document the actual license: ' + license_name)
-        entries.append(f'<li><strong>{b["name"]}:</strong> <a href="{m["source"]}" target="_blank" rel="noopener noreferrer">{escape(m["title"])}</a> · {escape(m["author"])} · <a href="{license_url}" target="_blank" rel="noopener noreferrer">{license_name}</a>. Verkleinert und als WebP gespeichert; Bildausschnitt im Layout. Die jeweilige Lizenz gilt auch für unsere Bildfassung.</li>')
+        entries.append(f'<li><strong>{b["name"]}:</strong> <a href="{m["source"]}" target="_blank" rel="noopener noreferrer">{escape(m["title"])}</a> · {escape(m["author"])} · <a href="{license_url}" target="_blank" rel="noopener noreferrer">{license_name}</a>. Verkleinert und als WebP gespeichert; Bildausschnitt im Layout. Die jeweilige Lizenz gilt auch für unsere Bildfassung.<span class="source-access">{SOURCE_ACCESS_HTML} (Bildquelle und Lizenz).</span></li>')
     return '\n'.join(entries)
 
 def about():
     team = ''.join(f'<article class="team-member"><span class="team-number" aria-hidden="true">0{i}</span><h3>{name}</h3></article>' for i, name in enumerate(['Rico', 'Til', 'Otto'], start=1))
-    reading = ''.join(f'<li><a href="{b["source"]}" target="_blank" rel="noopener noreferrer">{b["source_title"]} ↗</a></li>' for b in BREADS)
+    reading = ''.join(f'<li><a href="{b["source"]}" target="_blank" rel="noopener noreferrer">{b["source_title"]} ↗</a><span class="source-access">{SOURCE_ACCESS_HTML}</span></li>' for b in BREADS)
     page('ueber-uns', 'Über unser Projekt | Brotwelten', 'Brotwelten ist die Projektarbeit von Rico, Til und Otto für den Informatikunterricht. Dokumentation der Umsetzung mit HTML und CSS sowie aller verwendeten Quellen.', f'''
     <div class="container breadcrumb"><a href="index.html">Startseite</a><span aria-hidden="true">/</span><span>Über uns</span></div>
     <div class="container"><section class="about-hero" aria-labelledby="projekt-titel"><p class="eyebrow">Unsere Projektarbeit</p><h1 id="projekt-titel">Drei Schüler.<br>Eine gemeinsame <em>Idee.</em></h1><p class="lead">Wir sind Rico, Til und Otto. Mit Brotwelten stellen wir unserer Lehrerin unsere Projektarbeit im Informatikunterricht vor.</p></section>
-    {image('sauerteigbrot', BREADS[6]['alt'], 'about-banner', lazy=False)}
+    <figure class="about-photo">{image('sauerteigbrot', BREADS[6]['alt'], 'about-banner', lazy=False)}<figcaption class="source-access"><a href="#bildnachweise">Bildquelle</a> · {SOURCE_ACCESS_HTML}</figcaption></figure>
     <section class="about-intro" aria-labelledby="idee-titel"><div><p class="eyebrow">Unser Schulprojekt</p><h2 id="idee-titel">Brotwelten.<br>Unsere <em>Projektarbeit.</em></h2></div><div><p>Diese Website dient als interne Projektabgabe für unsere Informatiklehrerin. Am Thema Brot zeigen wir, wie wir eine zusammenhängende Website mit neun HTML-Seiten und einem gemeinsamen CSS-Layout umsetzen.</p><p>Inhaltlich stellen wir sieben Brotsorten mit ihrer Herkunft und ihren typischen Eigenschaften vor. Dazu haben wir passende Rezeptlinks auf Chefkoch und echte Fotografien ausgewählt. Die verwendeten Quellen und Bildnachweise sind dokumentiert.</p><p>Unser Lernziel ist es, Inhalte sinnvoll mit HTML zu strukturieren und mit CSS übersichtlich zu gestalten. Dazu gehören eine funktionierende Navigation, ein Layout für verschiedene Bildschirmgrößen und verständlicher Quellcode.</p></div></section>
     <section class="team-section" id="team" aria-labelledby="team-titel"><p class="eyebrow">Gemeinsam umgesetzt</p><h2 id="team-titel">Unser kleines Team.</h2><div class="team-grid">{team}</div></section>
     <section class="tech-section" aria-labelledby="technik-titel"><p class="eyebrow">Was dahintersteckt</p><h2 id="technik-titel">Mit den Grundlagen gebaut.</h2><div class="tech-list"><article><h3>HTML5</h3><p>Neun eigenständige Seiten mit verständlicher Struktur, echten Links und einem aufklappbaren Brotsorten-Menü.</p></article><article><h3>CSS3</h3><p>Gemeinsame Farben und Schriften, flexible Raster und ein Layout für große und kleine Bildschirme.</p></article></div></section>
-    <section class="credits-section" id="bildnachweise" aria-labelledby="quellen-titel"><p class="eyebrow">Transparent dokumentiert</p><h2 id="quellen-titel">Echte Bilder. Klare Quellen.</h2><p>Alle Brotaufnahmen sind Fotografien. Die Bilder wurden von Wikimedia Commons beziehungsweise Unsplash bezogen und lokal gespeichert. Für diese Aufnahmen wurden keine KI-Bilder erzeugt. Das Sauerteigfoto erscheint auch auf der Startseite und als Projektmotiv.</p><ul class="credits-list">{credits()}</ul><p>Schriften: <strong>Libre Caslon Display</strong> und <strong>DM Sans</strong>, lokal eingebunden. Beide stehen unter der <a href="assets/fonts/librecaslondisplay-OFL.txt">SIL Open Font License</a>; die <a href="assets/fonts/dmsans-OFL.txt">Lizenz von DM Sans</a> liegt ebenfalls im Projekt.</p><p>Hintergrundinformationen zum Weiterlesen:</p><ul class="reading-list">{reading}</ul><p>Ausführliche Bildangaben stehen zusätzlich in <a href="BILDQUELLEN.md">BILDQUELLEN.md</a>. Rezeptquellen und Prüfumfang sind in <a href="QUELLEN.md">QUELLEN.md</a> dokumentiert.</p></section>
+    <section class="credits-section" id="bildnachweise" aria-labelledby="quellen-titel"><p class="eyebrow">Transparent dokumentiert</p><h2 id="quellen-titel">Echte Bilder. Klare Quellen.</h2><p>Alle Brotaufnahmen sind Fotografien. Die Bilder wurden von Wikimedia Commons beziehungsweise Unsplash bezogen und lokal gespeichert. Für diese Aufnahmen wurden keine KI-Bilder erzeugt. Das Sauerteigfoto erscheint auch auf der Startseite und als Projektmotiv.</p><p>Die Abrufdaten nennen den letzten Quellenaufruf für diese Projektarbeit.</p><ul class="credits-list">{credits()}</ul><p>Schriften: <strong>Libre Caslon Display</strong> und <strong>DM Sans</strong>, lokal eingebunden. Beide stehen unter der <a href="assets/fonts/librecaslondisplay-OFL.txt">SIL Open Font License</a>; die <a href="assets/fonts/dmsans-OFL.txt">Lizenz von DM Sans</a> liegt ebenfalls im Projekt.<span class="source-access">Schriftquellen · {SOURCE_ACCESS_HTML}.</span></p><p>Hintergrundinformationen zum Weiterlesen:</p><ul class="reading-list">{reading}</ul><p>Ausführliche Bildangaben stehen zusätzlich in <a href="BILDQUELLEN.md">BILDQUELLEN.md</a>. Rezeptquellen und Prüfumfang sind in <a href="QUELLEN.md">QUELLEN.md</a> dokumentiert.</p></section>
     <nav class="page-return" aria-label="Zurück zum Entdecken"><a class="back-link" href="index.html">← Zurück zur Startseite</a><a class="text-link" href="index.html#brotsorten">Die sieben Brotsorten {ARROW}</a></nav></div>
 ''')
 
 def documentation():
-    lines = ['# Bildquellen – Brotwelten', '', 'Geprüft und heruntergeladen am 30. Oktober 2026.', '', 'Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; das Layout beschneidet sie mit `object-fit: cover`. Keine generative Bildbearbeitung. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.', '']
+    lines = ['# Bildquellen – Brotwelten', '', 'Bilder heruntergeladen am 30. Oktober 2026. ' + SOURCE_ACCESS_TEXT + ' (Bildquellen und Lizenzen).', '', 'Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; das Layout beschneidet sie mit `object-fit: cover`. Keine generative Bildbearbeitung. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.', '']
     for b in BREADS:
         m = METADATA[b['slug']]
         lic = m['licenses'][0]
-        lines += [f'## {b["name"]}', f'- Dateien: `assets/images/{b["slug"]}.webp`, `assets/images/{b["slug"]}-small.webp`', f'- Originaltitel: {m["title"]}', f'- Urheber: {m["author"]}', f'- Originalseite: {m["source"]}', f'- Bilddatei der Quelle: {m["original"]}', f'- Verwendete Lizenz: [{lic}]({LICENSE_URLS[lic]})', f'- Optimierte große Fassung: {m["width"]} × {m["height"]} px.', '']
-    lines += ['Das Sauerteigmotiv wird mehrfach verwendet. `hero.webp` ist die heruntergeladene Ausgangsdatei dafür; die Website bindet die optimierten Sauerteigdateien ein.', '', '## Schriften', '- Libre Caslon Display: https://fonts.google.com/specimen/Libre+Caslon+Display', '- DM Sans: https://fonts.google.com/specimen/DM+Sans', '- Bezogen über Google Fonts, lokal eingebunden. SIL Open Font License 1.1; Lizenzdateien unter `assets/fonts/`.', '', 'Das kleine typografische Favicon ist projektintern als SVG angelegt; es enthält kein Brotfoto.']
+        lines += [f'## {b["name"]}', f'- Dateien: `assets/images/{b["slug"]}.webp`, `assets/images/{b["slug"]}-small.webp`', f'- Originaltitel: {m["title"]}', f'- Urheber: {m["author"]}', f'- Originalseite: {m["source"]}', f'- Bilddatei der Quelle: {m["original"]}', f'- Verwendete Lizenz: [{lic}]({LICENSE_URLS[lic]})', f'- {SOURCE_ACCESS_TEXT} (Originalseite und Lizenz).', f'- Optimierte große Fassung: {m["width"]} × {m["height"]} px.', '']
+    lines += ['Das Sauerteigmotiv wird mehrfach verwendet. `hero.webp` ist die heruntergeladene Ausgangsdatei dafür; die Website bindet die optimierten Sauerteigdateien ein.', '', '## Schriften', '- Libre Caslon Display: https://fonts.google.com/specimen/Libre+Caslon+Display – ' + SOURCE_ACCESS_TEXT + '.', '- DM Sans: https://fonts.google.com/specimen/DM+Sans – ' + SOURCE_ACCESS_TEXT + '.', '- Bezogen über Google Fonts, lokal eingebunden. SIL Open Font License 1.1; Lizenzdateien unter `assets/fonts/`.', '', 'Das kleine typografische Favicon ist projektintern als SVG angelegt; es enthält kein Brotfoto.']
     (ROOT / 'BILDQUELLEN.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    lines = ['# Inhalts- und Rezeptquellen', '', 'Recherche und Linkprüfung: 30. Oktober 2026. Die Texte sind eigenständig formuliert. Es werden keine vollständigen Chefkoch-Rezepte oder deren Bilder übernommen.', '', '## Chefkoch-Rezepte', '', 'Die folgenden konkreten Rezeptseiten wurden bei der Recherche über Chefkoch-Suchergebnisse und die auslesbaren Seiteninhalte geprüft. Externe Websites können später ihre Inhalte, URLs oder Zugangsbedingungen ändern.', '']
+    lines = ['# Inhalts- und Rezeptquellen', '', 'Erste Recherche am 30. Oktober 2026. ' + SOURCE_ACCESS_TEXT + ' (Informations- und Rezeptquellen). Die Texte sind eigenständig formuliert. Es werden keine vollständigen Chefkoch-Rezepte oder deren Bilder übernommen.', '', '## Chefkoch-Rezepte', '', 'Die folgenden konkreten Rezeptseiten wurden bei der Recherche über Chefkoch-Suchergebnisse und die auslesbaren Seiteninhalte geprüft. Externe Websites können später ihre Inhalte, URLs oder Zugangsbedingungen ändern.', '']
     for b in BREADS:
-        lines.append(f'- **{b["name"]}:** [{b["recipe_title"]}]({b["recipe"]}) – {b["recipe_note"]}')
+        lines.append(f'- **{b["name"]}:** [{b["recipe_title"]}]({b["recipe"]}) – {b["recipe_note"]} {SOURCE_ACCESS_TEXT}.')
     lines += ['', '## Hintergrundinformationen', '']
     for b in BREADS:
-        lines.append(f'- {b["name"]}: [{b["source_title"]}]({b["source"]})')
+        lines.append(f'- {b["name"]}: [{b["source_title"]}]({b["source"]}) – {SOURCE_ACCESS_TEXT}.')
     lines += ['', 'Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein.']
     (ROOT / 'QUELLEN.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 

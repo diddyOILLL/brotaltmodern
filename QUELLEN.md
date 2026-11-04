@@ -24,4 +24,4 @@ Die folgenden konkreten Rezeptseiten wurden bei der Recherche über Chefkoch-Suc
 - Ciabatta: [Hintergrund: Herkunft des Ciabattas](https://en.wikipedia.org/wiki/Ciabatta)
 - Sauerteigbrot: [BZfE: Was machen Hefe und Sauerteig?](https://www.bzfe.de/presse/pressemeldungen-archiv/was-machen-eigentlich-hefe-und-sauerteig)
 
-Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein. Geschmacksfilter zeigen typische Tendenzen, keine festen Produkteigenschaften.
+Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein.

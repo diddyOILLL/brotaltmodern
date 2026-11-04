@@ -9,7 +9,7 @@ DOWN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=
 DIAGONAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>'
 
 BREADS = [
-  dict(slug='weizenbrot', name='Weizenbrot', region='Vielseitiger Klassiker', origin='Vorderasien · weltweit', grain='Weizen', taste='Mild & fein', category='mild', category_label='Mild & luftig',
+  dict(slug='weizenbrot', name='Weizenbrot', region='Vielseitiger Klassiker', origin='Vorderasien · weltweit', grain='Weizen', taste='Mild & fein', category_label='Mild & luftig',
     subtitle='Goldene Kruste. Helle Krume. Ein Brot für jeden Tag.',
     short='Mild im Geschmack, luftig im Inneren. Der helle Klassiker, der zu fast allem passt.',
     alt='Angeschnittenes helles Weizenbrot mit goldbrauner Kruste und feinporiger Krume',
@@ -23,7 +23,7 @@ BREADS = [
     pairing='Frische Butter, milder Käse oder selbst gemachte Marmelade lassen dem feinen Brotgeschmack Raum.',
     recipe='https://www.chefkoch.de/rezepte/2497421392380064/Einfaches-Weizenbrot.html', recipe_title='Einfaches Weizenbrot', recipe_author='hulkholler', recipe_note='Ein unkompliziertes Kastenbrot mit Weizenmehl und Trockenhefe.',
     source='https://www.ploetzblog.de/baeckerlatein/brotsorten/id=611a73f0c30e586ffcd80769', source_title='Plötzblog: Einteilung der Brotsorten'),
-  dict(slug='roggenbrot', name='Roggenbrot', region='Nord- & Mitteleuropa', origin='Nord- & Mitteleuropa', grain='Roggen', taste='Kräftig & würzig', category='kraeftig', category_label='Kräftig & kernig',
+  dict(slug='roggenbrot', name='Roggenbrot', region='Nord- & Mitteleuropa', origin='Nord- & Mitteleuropa', grain='Roggen', taste='Kräftig & würzig', category_label='Kräftig & kernig',
     subtitle='Dunkel, saftig und voller Charakter.',
     short='Kräftiges Aroma und eine saftige, dichte Krume. Ein Stück mitteleuropäische Brotkultur.',
     alt='Angeschnittenes Kastenbrot aus hundert Prozent Roggen auf einem Holzbrett',
@@ -37,7 +37,7 @@ BREADS = [
     pairing='Kräftiger Käse, würzige Aufstriche oder einfach gesalzene Butter passen zu seinem herzhaften Charakter.',
     recipe='https://www.chefkoch.de/rezepte/2546941398669812/Reines-Roggenbrot-mit-Sauerteig.html', recipe_title='Reines Roggenbrot mit Sauerteig', recipe_author='andrea_luise', recipe_note='Ein Roggenbrot mit Vorteig und einer längeren Reifezeit.',
     source='https://www.bzfe.de/presse/pressemeldungen-archiv/getreide-abc-roggen', source_title='BZfE: Getreide-ABC Roggen'),
-  dict(slug='vollkornbrot', name='Vollkornbrot', region='Das ganze Korn', origin='Viele regionale Traditionen', grain='Ganzes Getreidekorn', taste='Kernig & aromatisch', category='kraeftig', category_label='Kräftig & kernig',
+  dict(slug='vollkornbrot', name='Vollkornbrot', region='Das ganze Korn', origin='Viele regionale Traditionen', grain='Ganzes Getreidekorn', taste='Kernig & aromatisch', category_label='Kräftig & kernig',
     subtitle='Alles vom Korn. Viel vom Geschmack.',
     short='Schale, Keimling und Mehlkörper: Hier kommt das ganze Getreidekorn ins Brot.',
     alt='Braunes Vollkorn-Kastenbrot mit einem Längsschnitt auf einem runden Holzbrett',
@@ -51,7 +51,7 @@ BREADS = [
     pairing='Frischkäse, knackige Radieschen oder ein Hummus passen gut zur aromatischen Krume.',
     recipe='https://www.chefkoch.de/rezepte/1344331239198800/Saftiges-Vollkornbrot.html', recipe_title='Saftiges Vollkornbrot', recipe_author='egghead', recipe_note='Ein Kastenbrot aus Dinkelvollkornmehl mit einer Mischung aus Kernen.',
     source='https://de.wikipedia.org/wiki/Vollkornbrot', source_title='Hintergrund: Vollkornbrot'),
-  dict(slug='dinkelbrot', name='Dinkelbrot', region='Mitteleuropäische Tradition', origin='Mitteleuropa', grain='Dinkel', taste='Nussig & fein', category='nussig', category_label='Nussig & fein',
+  dict(slug='dinkelbrot', name='Dinkelbrot', region='Mitteleuropäische Tradition', origin='Mitteleuropa', grain='Dinkel', taste='Nussig & fein', category_label='Nussig & fein',
     subtitle='Eine alte Getreideart mit feiner, nussiger Note.',
     short='Mild, leicht nussig und vielseitig. Eine alte Weizenart zeigt, was in ihr steckt.',
     alt='Angeschnittenes Dinkelbrot mit Sesam, Leinsamen, Sonnenblumenkernen, Kürbiskernen und Walnüssen',
@@ -65,7 +65,7 @@ BREADS = [
     pairing='Milder Ziegenkäse, Birne oder ein Gemüseaufstrich greifen die feinen, nussigen Aromen auf.',
     recipe='https://www.chefkoch.de/rezepte/148901065524584/Dinkelbrot-einfach.html', recipe_title='Dinkelbrot – einfach', recipe_author='maeuseturm', recipe_note='Ein schlichtes Dinkel-Hefebrot für die Kastenform.',
     source='https://de.wikipedia.org/wiki/Dinkelbrot', source_title='Hintergrund: Dinkelbrot'),
-  dict(slug='baguette', name='Baguette', region='Frankreich', origin='Frankreich', grain='Weizen', taste='Knusprig & mild', category='mild', category_label='Mild & luftig',
+  dict(slug='baguette', name='Baguette', region='Frankreich', origin='Frankreich', grain='Weizen', taste='Knusprig & mild', category_label='Mild & luftig',
     subtitle='Eine krachende Kruste. Ein französisches Ritual.',
     short='Schlanke Form, goldene Kruste, luftiges Inneres. Frankreichs täglicher Begleiter.',
     alt='Französische Baguettes mit goldbrauner, mehrfach schräg eingeschnittener Kruste',
@@ -79,7 +79,7 @@ BREADS = [
     pairing='Ein Stück Käse, etwas Butter oder Olivenöl genügen. Als Beilage nimmt die offene Krume Saucen gut auf.',
     recipe='https://www.chefkoch.de/rezepte/2587261406118751/Baguette-magique.html', recipe_title='Baguette magique', recipe_author='Chefkoch-Community', recipe_note='Ein einfaches Baguette-Rezept für zu Hause, ohne aufwendiges Kneten.',
     source='https://ich.unesco.org/en/RL/artisanal-know-how-and-culture-of-baguette-bread-01883', source_title='UNESCO: Baguette-Handwerk und -Kultur'),
-  dict(slug='ciabatta', name='Ciabatta', region='Italien · Venetien', origin='Venetien, Italien', grain='Weizen', taste='Luftig & aromatisch', category='mild', category_label='Mild & luftig',
+  dict(slug='ciabatta', name='Ciabatta', region='Italien · Venetien', origin='Venetien, Italien', grain='Weizen', taste='Luftig & aromatisch', category_label='Mild & luftig',
     subtitle='Viel Luft. Viel Aroma. Ein kleines Stück Italien.',
     short='Unregelmäßige Poren und eine rustikale Form. Der italienische Klassiker mit der leichten Krume.',
     alt='Vier längliche, frisch gebackene Ciabattabrote mit bemehlter Kruste auf einem Abkühlgitter',
@@ -93,7 +93,7 @@ BREADS = [
     pairing='Tomaten, Basilikum und gutes Olivenöl passen ebenso wie gegrilltes Gemüse oder eine sommerliche Suppe.',
     recipe='https://www.chefkoch.de/rezepte/325981114933330/Ciabatta.html', recipe_title='Ciabatta', recipe_author='Chefkoch-Community', recipe_note='Ein Ciabatta mit Vorteig und Olivenöl – Zeit zum Reifen gehört dazu.',
     source='https://en.wikipedia.org/wiki/Ciabatta', source_title='Hintergrund: Herkunft des Ciabattas'),
-  dict(slug='sauerteigbrot', name='Sauerteigbrot', region='Handwerk mit Zeit', origin='Viele Brotkulturen', grain='Weizen, Roggen oder Dinkel', taste='Vielschichtig & fein säuerlich', category='kraeftig', category_label='Kräftig & kernig',
+  dict(slug='sauerteigbrot', name='Sauerteigbrot', region='Handwerk mit Zeit', origin='Viele Brotkulturen', grain='Weizen, Roggen oder Dinkel', taste='Vielschichtig & fein säuerlich', category_label='Kräftig & kernig',
     subtitle='Mehl, Wasser und Zeit. Den Rest macht die Kultur.',
     short='Eine lebendige Kultur, eine lange Reife. Sauerteig schenkt Brot Tiefe, Charakter und eine besondere Kruste.',
     alt='Angeschnittener handwerklicher Sauerteiglaib mit dunkler Kruste und offener Porung auf Backpapier',
@@ -116,7 +116,6 @@ def header(current):
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Brotwelten – Startseite">Brotwelten<span class="brand-mark" aria-hidden="true">.</span></a>
-      <button class="menu-toggle" type="button" aria-controls="hauptnavigation" aria-expanded="false" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg><span class="menu-label">Menü</span></button>
       <nav class="primary-nav" id="hauptnavigation" aria-label="Hauptnavigation">
         <a class="nav-link" href="index.html"{active('index')}>Startseite</a>
         <details class="bread-menu{' current' if current in [b['slug'] for b in BREADS] else ''}">
@@ -153,7 +152,6 @@ def page(slug, title, description, body):
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/script.js" defer></script>
 </head>
 <body id="seitenanfang">
   {header(slug)}
@@ -171,7 +169,7 @@ def image(slug, alt, cls='', lazy=True, small=False):
     return f'<img class="{cls}" src="assets/images/{slug}{"-small" if small else ""}.webp" srcset="assets/images/{slug}-small.webp 700w, assets/images/{slug}.webp {meta["width"]}w" sizes="{("(max-width: 600px) 100vw, (max-width: 800px) 45vw, 30vw" if small else "(max-width: 600px) 100vw, 50vw")}" width="{meta["width"]}" height="{meta["height"]}" alt="{escape(alt, quote=True)}" {"loading=\"lazy\"" if lazy else "fetchpriority=\"high\""} decoding="async">'
 
 def card(b, i):
-    return f'''<article class="bread-card reveal{' featured' if i == 6 else ''}" data-category="{b['category']}">
+    return f'''<article class="bread-card{' featured' if i == 6 else ''}">
           <a class="card-photo" href="{b['slug']}.html" aria-label="{b['name']} entdecken">{image(b['slug'], b['alt'], small=True)}<span class="card-index" aria-hidden="true">0{i+1}</span></a>
           <div class="card-copy"><div class="card-meta"><span>{b['region']}</span><span>{b['category_label']}</span></div>
           <h3><a href="{b['slug']}.html">{b['name']}</a></h3><p>{b['short']}</p><a class="text-link" href="{b['slug']}.html" aria-label="Mehr über {b['name']} erfahren">Mehr erfahren {ARROW}</a></div>
@@ -198,21 +196,21 @@ def home():
       <div class="intro-strip" aria-label="Was dich erwartet"><div><strong>07</strong><span>Brotsorten im Porträt</span></div><div><strong>Wissen</strong><span>Von Herkunft bis Handwerk</span></div><div><strong>Rezepte</strong><span>Zum Selberbacken</span></div></div>
     </section>
     <section class="collection container" id="brotsorten" aria-labelledby="sorten-titel">
-      <div class="section-heading reveal"><div><p class="eyebrow">Die Brotsammlung</p><h2 id="sorten-titel">Jedes Brot hat<br>seine <em>Geschichte.</em></h2></div><p>Hell oder dunkel. Mild oder kräftig.<br>Entdecke, was unsere sieben Brotsorten besonders macht.</p></div>
-      <div class="collection-toolbar"><div class="filters" role="group" aria-label="Brotsorten nach Geschmack filtern" hidden><button class="filter-button" type="button" data-filter="all" aria-pressed="true" aria-controls="brotsammlung">Alle Brote <sup>07</sup></button><button class="filter-button" type="button" data-filter="mild" aria-pressed="false" aria-controls="brotsammlung">Mild & luftig <sup>03</sup></button><button class="filter-button" type="button" data-filter="kraeftig" aria-pressed="false" aria-controls="brotsammlung">Kräftig & kernig <sup>03</sup></button><button class="filter-button" type="button" data-filter="nussig" aria-pressed="false" aria-controls="brotsammlung">Nussig & fein <sup>01</sup></button></div><span class="result-count" role="status" aria-live="polite" aria-atomic="true">7 von 7 Brotsorten</span></div>
+      <div class="section-heading"><div><p class="eyebrow">Die Brotsammlung</p><h2 id="sorten-titel">Jedes Brot hat<br>seine <em>Geschichte.</em></h2></div><p>Hell oder dunkel. Mild oder kräftig.<br>Entdecke, was unsere sieben Brotsorten besonders macht.</p></div>
+      <div class="collection-toolbar"><span class="result-count">7 Brotsorten im Überblick</span></div>
       <div class="bread-grid" id="brotsammlung">{cards}</div>
     </section>
     <section class="story-section" aria-labelledby="geschichte-titel"><div class="container story-grid">
-      <figure class="story-photo reveal">{image('sauerteigbrot', BREADS[6]['alt'])}<figcaption>Wenige Zutaten. Viele Möglichkeiten.</figcaption></figure>
-      <div class="story-copy reveal"><p class="eyebrow">Mehr als ein Lebensmittel</p><h2 id="geschichte-titel">Ein Stück Brot.<br>Ein Stück <em>Kultur.</em></h2><p>Mehl, Wasser, Salz und ein wenig Zeit: Aus wenigen Zutaten entsteht etwas, das Menschen seit Jahrtausenden begleitet. Brot gehört zum Alltag und erzählt zugleich von Landschaften, Getreide und handwerklichen Traditionen.</p><p>Ob kräftiges Roggenbrot im Norden oder luftiges Ciabatta in Italien – jede Region hat ihre eigenen Antworten auf eine einfache Frage: Wie wird aus Korn ein gutes Brot?</p><a class="text-link" href="ueber-uns.html">Die Idee hinter Brotwelten {ARROW}</a></div>
+      <figure class="story-photo">{image('sauerteigbrot', BREADS[6]['alt'])}<figcaption>Wenige Zutaten. Viele Möglichkeiten.</figcaption></figure>
+      <div class="story-copy"><p class="eyebrow">Mehr als ein Lebensmittel</p><h2 id="geschichte-titel">Ein Stück Brot.<br>Ein Stück <em>Kultur.</em></h2><p>Mehl, Wasser, Salz und ein wenig Zeit: Aus wenigen Zutaten entsteht etwas, das Menschen seit Jahrtausenden begleitet. Brot gehört zum Alltag und erzählt zugleich von Landschaften, Getreide und handwerklichen Traditionen.</p><p>Ob kräftiges Roggenbrot im Norden oder luftiges Ciabatta in Italien – jede Region hat ihre eigenen Antworten auf eine einfache Frage: Wie wird aus Korn ein gutes Brot?</p><a class="text-link" href="ueber-uns.html">Die Idee hinter Brotwelten {ARROW}</a></div>
     </div></section>
-    <section class="closing container reveal" aria-labelledby="abschluss-titel"><p class="eyebrow">Wissen, das Appetit macht</p><h2 id="abschluss-titel">Neugierig geworden?<br>Dann <em>brich ein Stück ab.</em></h2><p>Jedes Brotporträt führt dich auch zu einem passenden Rezept.</p><a class="text-link" href="weizenbrot.html">Mit Weizenbrot beginnen {ARROW}</a></section>
+    <section class="closing container" aria-labelledby="abschluss-titel"><p class="eyebrow">Wissen, das Appetit macht</p><h2 id="abschluss-titel">Neugierig geworden?<br>Dann <em>brich ein Stück ab.</em></h2><p>Jedes Brotporträt führt dich auch zu einem passenden Rezept.</p><a class="text-link" href="weizenbrot.html">Mit Weizenbrot beginnen {ARROW}</a></section>
 ''')
 
 def breadpage(b, i):
     history = ''.join(f'<p>{p}</p>' for p in b['history'])
     properties = ''.join(f'<div><dt>{title}</dt><dd>{text}</dd></div>' for title, text in b['properties'])
-    facts = ''.join(f'<article class="fact reveal"><div class="fact-number" aria-hidden="true">0{n+1}</div><h3>{title}</h3><p>{text}</p></article>' for n, (title, text) in enumerate(b['facts']))
+    facts = ''.join(f'<article class="fact"><div class="fact-number" aria-hidden="true">0{n+1}</div><h3>{title}</h3><p>{text}</p></article>' for n, (title, text) in enumerate(b['facts']))
     nxt = BREADS[(i + 1) % len(BREADS)]
     page(b['slug'], b['name'] + ' – Herkunft, Charakter & Rezept | Brotwelten', b['short'], f'''
     <div class="container breadcrumb" aria-label="Brotkrümelnavigation"><a href="index.html">Startseite</a><span aria-hidden="true">/</span><a href="index.html#brotsorten">Brotsorten</a><span aria-hidden="true">/</span><span>{b['name']}</span></div>
@@ -221,10 +219,10 @@ def breadpage(b, i):
       <figure class="hero-figure">{image(b['slug'], b['alt'], 'hero-image', lazy=False)}<figcaption class="photo-caption"><span>{b['name']} · Eine von vielen Varianten</span><a href="ueber-uns.html#bildnachweise">Bildnachweis ↗</a></figcaption></figure>
     </div></section>
     <div class="container"><dl class="at-a-glance"><div><dt>Verwurzelt in</dt><dd>{b['origin']}</dd></div><div><dt>Im Mittelpunkt</dt><dd>{b['grain']}</dd></div><div><dt>Der Charakter</dt><dd>{b['taste']}</dd></div></dl>
-      <section class="article-section" id="geschichte" aria-labelledby="geschichte-titel"><div class="reveal"><p class="eyebrow">Herkunft & Geschichte</p><h2 id="geschichte-titel">{b['history_title']}</h2></div><div class="article-copy reveal">{history}<p class="source-note">Zum Weiterlesen: <a href="{b['source']}" target="_blank" rel="noopener noreferrer">{b['source_title']} ↗</a></p></div></section>
-      <section class="article-section" aria-labelledby="charakter-titel"><div class="reveal"><p class="eyebrow">Von außen nach innen</p><h2 id="charakter-titel">Das macht<br>es <em>besonders.</em></h2><p class="pairing-note">{b['pairing']}</p></div><dl class="properties reveal">{properties}</dl></section>
+      <section class="article-section" id="geschichte" aria-labelledby="geschichte-titel"><div><p class="eyebrow">Herkunft & Geschichte</p><h2 id="geschichte-titel">{b['history_title']}</h2></div><div class="article-copy">{history}<p class="source-note">Zum Weiterlesen: <a href="{b['source']}" target="_blank" rel="noopener noreferrer">{b['source_title']} ↗</a></p></div></section>
+      <section class="article-section" aria-labelledby="charakter-titel"><div><p class="eyebrow">Von außen nach innen</p><h2 id="charakter-titel">Das macht<br>es <em>besonders.</em></h2><p class="pairing-note">{b['pairing']}</p></div><dl class="properties">{properties}</dl></section>
       <section class="facts-section" aria-labelledby="fakten-titel"><p class="eyebrow">Eine Scheibe Wissen</p><h2 id="fakten-titel">Schon gewusst?</h2><div class="facts-grid">{facts}</div></section>
-      <section class="recipe-section reveal" aria-labelledby="rezept-titel"><div><p class="eyebrow">Vom Lesen zum Backen</p><h2 id="rezept-titel">Jetzt wird’s<br><em>handgemacht.</em></h2></div><div class="recipe-copy"><p>{b['recipe_note']} Das passende Rezept „{b['recipe_title']}“ findest du auf Chefkoch.</p><a class="button" href="{b['recipe']}" target="_blank" rel="noopener noreferrer">Rezept auf Chefkoch ansehen ↗</a><small>Externe Rezeptseite · öffnet in einem neuen Tab</small></div></section>
+      <section class="recipe-section" aria-labelledby="rezept-titel"><div><p class="eyebrow">Vom Lesen zum Backen</p><h2 id="rezept-titel">Jetzt wird’s<br><em>handgemacht.</em></h2></div><div class="recipe-copy"><p>{b['recipe_note']} Das passende Rezept „{b['recipe_title']}“ findest du auf Chefkoch.</p><a class="button" href="{b['recipe']}" target="_blank" rel="noopener noreferrer">Rezept auf Chefkoch ansehen ↗</a><small>Externe Rezeptseite · öffnet in einem neuen Tab</small></div></section>
       <nav class="page-return" aria-label="Weiter entdecken"><a class="back-link" href="index.html">← Zurück zur Startseite</a><a class="next-link" href="{nxt['slug']}.html"><span>Nächstes Brotporträt</span>{nxt['name']} →</a></nav>
     </div>
 ''')
@@ -243,15 +241,15 @@ def credits():
     return '\n'.join(entries)
 
 def about():
-    team = ''.join(f'<article class="team-member reveal"><span class="team-number" aria-hidden="true">0{i}</span><h3>Teammitglied {i}</h3><p>Name wird ergänzt.</p></article>' for i in range(1,4))
+    team = ''.join(f'<article class="team-member"><span class="team-number" aria-hidden="true">0{i}</span><h3>{name}</h3></article>' for i, name in enumerate(['Rico', 'Til', 'Otto'], start=1))
     reading = ''.join(f'<li><a href="{b["source"]}" target="_blank" rel="noopener noreferrer">{b["source_title"]} ↗</a></li>' for b in BREADS)
     page('ueber-uns', 'Über unser Projekt | Brotwelten', 'Drei Schüler, sieben Brotsorten und ein gemeinsames Informatikprojekt. Die Idee, das Team, die Technik und alle Bildnachweise hinter Brotwelten.', f'''
     <div class="container breadcrumb"><a href="index.html">Startseite</a><span aria-hidden="true">/</span><span>Über uns</span></div>
     <div class="container"><section class="about-hero" aria-labelledby="projekt-titel"><p class="eyebrow">Die Menschen hinter dem Projekt</p><h1 id="projekt-titel">Drei Schüler.<br>Eine gemeinsame <em>Idee.</em></h1><p class="lead">Brot gehört zum Alltag. Wir wollten genauer hinschauen – und dabei lernen, wie aus HTML, CSS und einer Idee eine eigene Website wird.</p></section>
     {image('sauerteigbrot', BREADS[6]['alt'], 'about-banner', lazy=False)}
-    <section class="about-intro" aria-labelledby="idee-titel"><div class="reveal"><p class="eyebrow">Warum Brotwelten?</p><h2 id="idee-titel">Alltäglich.<br>Und voller <em>Geschichten.</em></h2></div><div class="reveal"><p>Diese Website ist ein Informatik-Schulprojekt von drei Schülern. Unser Ziel: eine übersichtliche, ansprechend gestaltete Seite, auf der wir ein vertrautes Thema aus unterschiedlichen Blickwinkeln vorstellen.</p><p>Du entdeckst sieben Brotsorten, erfährst etwas über ihre Herkunft und lernst ihre typischen Eigenschaften kennen. Zu jeder Sorte gibt es einen Link zu einem passenden Rezept auf Chefkoch. Die Rezepte selbst bleiben bei ihren Urhebern.</p><p>Unsere Porträts beschreiben typische Merkmale. Brot ist Handwerk: Zutaten, Form und Geschmack können sich von Rezept zu Rezept unterscheiden.</p></div></section>
+    <section class="about-intro" aria-labelledby="idee-titel"><div><p class="eyebrow">Warum Brotwelten?</p><h2 id="idee-titel">Alltäglich.<br>Und voller <em>Geschichten.</em></h2></div><div><p>Diese Website ist ein Informatik-Schulprojekt von drei Schülern. Unser Ziel: eine übersichtliche, ansprechend gestaltete Seite, auf der wir ein vertrautes Thema aus unterschiedlichen Blickwinkeln vorstellen.</p><p>Du entdeckst sieben Brotsorten, erfährst etwas über ihre Herkunft und lernst ihre typischen Eigenschaften kennen. Zu jeder Sorte gibt es einen Link zu einem passenden Rezept auf Chefkoch. Die Rezepte selbst bleiben bei ihren Urhebern.</p><p>Unsere Porträts beschreiben typische Merkmale. Brot ist Handwerk: Zutaten, Form und Geschmack können sich von Rezept zu Rezept unterscheiden.</p></div></section>
     <section class="team-section" id="team" aria-labelledby="team-titel"><p class="eyebrow">Gemeinsam umgesetzt</p><h2 id="team-titel">Unser kleines Team.</h2><div class="team-grid">{team}</div></section>
-    <section class="tech-section reveal" aria-labelledby="technik-titel"><p class="eyebrow">Was dahintersteckt</p><h2 id="technik-titel">Mit den Grundlagen gebaut.</h2><div class="tech-list"><article><h3>HTML5</h3><p>Neun eigenständige Seiten mit verständlicher Struktur, echten Links und vollständig enthaltenen Texten.</p></article><article><h3>CSS3</h3><p>Gemeinsame Farben und Schriften, flexible Raster und ein Layout für große und kleine Bildschirme.</p></article><article><h3>JavaScript</h3><p>Kleine Ergänzungen: Menü, Geschmacksfilter und sanfte Einblendeffekte. Die Inhalte funktionieren auch ohne JavaScript.</p></article></div></section>
+    <section class="tech-section" aria-labelledby="technik-titel"><p class="eyebrow">Was dahintersteckt</p><h2 id="technik-titel">Mit den Grundlagen gebaut.</h2><div class="tech-list"><article><h3>HTML5</h3><p>Neun eigenständige Seiten mit verständlicher Struktur, echten Links und einem aufklappbaren Brotsorten-Menü.</p></article><article><h3>CSS3</h3><p>Gemeinsame Farben und Schriften, flexible Raster und ein Layout für große und kleine Bildschirme.</p></article></div></section>
     <section class="credits-section" id="bildnachweise" aria-labelledby="quellen-titel"><p class="eyebrow">Transparent dokumentiert</p><h2 id="quellen-titel">Echte Bilder. Klare Quellen.</h2><p>Alle Brotaufnahmen sind Fotografien. Die Bilder wurden von Wikimedia Commons beziehungsweise Unsplash bezogen und lokal gespeichert. Für diese Aufnahmen wurden keine KI-Bilder erzeugt. Das Sauerteigfoto erscheint auch auf der Startseite und als Projektmotiv.</p><ul class="credits-list">{credits()}</ul><p>Schriften: <strong>Libre Caslon Display</strong> und <strong>DM Sans</strong>, lokal eingebunden. Beide stehen unter der <a href="assets/fonts/librecaslondisplay-OFL.txt">SIL Open Font License</a>; die <a href="assets/fonts/dmsans-OFL.txt">Lizenz von DM Sans</a> liegt ebenfalls im Projekt.</p><p>Hintergrundinformationen zum Weiterlesen:</p><ul class="reading-list">{reading}</ul><p>Ausführliche Bildangaben stehen zusätzlich in <a href="BILDQUELLEN.md">BILDQUELLEN.md</a>. Rezeptquellen und Prüfumfang sind in <a href="QUELLEN.md">QUELLEN.md</a> dokumentiert.</p></section>
     <nav class="page-return" aria-label="Zurück zum Entdecken"><a class="back-link" href="index.html">← Zurück zur Startseite</a><a class="text-link" href="index.html#brotsorten">Die sieben Brotsorten {ARROW}</a></nav></div>
 ''')
@@ -270,7 +268,7 @@ def documentation():
     lines += ['', '## Hintergrundinformationen', '']
     for b in BREADS:
         lines.append(f'- {b["name"]}: [{b["source_title"]}]({b["source"]})')
-    lines += ['', 'Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein. Geschmacksfilter zeigen typische Tendenzen, keine festen Produkteigenschaften.']
+    lines += ['', 'Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein.']
     (ROOT / 'QUELLEN.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 if __name__ == '__main__':

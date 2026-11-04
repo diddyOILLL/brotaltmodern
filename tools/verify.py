@@ -15,6 +15,9 @@ class Document(HTMLParser):
         self.feed(source)
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        assert tag != 'script', 'Script tags are not allowed'
+        assert not any(name.lower().startswith('on') for name in a), 'Inline event handlers are not allowed'
+        assert not any(value and value.strip().lower().startswith('javascript:') for value in a.values()), 'JavaScript URLs are not allowed'
         if 'id' in a:
             assert a['id'] not in self.ids, 'Duplicate ID: ' + a['id']
             self.ids.add(a['id'])
@@ -26,8 +29,8 @@ class Document(HTMLParser):
             assert a.get('width') and a.get('height'), 'Missing intrinsic image dimensions'
             for item in a.get('srcset', '').split(','):
                 if item.strip(): self.assets.append(item.strip().split()[0])
-        if tag in ['script', 'link']:
-            target = a.get('src') if tag == 'script' else a.get('href')
+        if tag == 'link':
+            target = a.get('href')
             if target: self.assets.append(target)
         if tag == 'h1': self.h1 += 1
         if tag == 'main': self.main += 1
@@ -67,4 +70,6 @@ for name, source in pages.items():
 for css in (ROOT / 'assets/css').glob('*.css'):
     for url in re.findall(r'url\(([^)]+)\)', css.read_text(encoding='utf-8')):
         assert (css.parent / url.strip('\"\'')).is_file(), f'Missing CSS asset {url}'
+for directory in [ROOT / 'assets', ROOT / 'tools']:
+    assert not any(file.suffix.lower() in ['.js', '.mjs', '.cjs'] for file in directory.rglob('*') if file.is_file()), 'JavaScript files are not allowed'
 print(f'PASS: 9 pages, {link_count} links, {image_count} image instances, all anchors/assets and required return links.')

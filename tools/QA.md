@@ -1,5 +1,13 @@
 # Qualitätsprüfung – 30. Oktober 2026
 
+## Aktualisierung vom 4. November 2026
+
+JavaScript wurde vollständig aus dem Website-Quellcode, den optionalen lokalen Hilfsprogrammen und dem Abgabepaket entfernt. Die Teammitglieder heißen Rico, Til und Otto. Die Hauptnavigation ist direkt sichtbar, das Brotsorten-Menü verwendet das native HTML-Element `<details>`, und alle sieben Brotporträts werden gemeinsam angezeigt.
+
+Alle neun Seiten wurden bei 320 Pixeln Breite im Browser geprüft. Jede Seite enthält null Skripte, die Navigation ist sichtbar, und es gibt keinen horizontalen Überlauf. Das Brotsorten-Menü öffnet und schließt per Tastatur und enthält alle sieben Links. Der Wechsel zur Roggenbrotseite und die Rückkehr zu den sieben Karten der Startseite funktionieren. Auf der Projektseite wurden die Namen Rico, Til und Otto sowie die beiden Technikbereiche HTML5 und CSS3 geprüft.
+
+Die nachfolgenden Prüfungen vom 30. Oktober dokumentieren die frühere Fassung.
+
 ## Statische Prüfung
 
 - Genau neun HTML-Seiten im Projektstamm.

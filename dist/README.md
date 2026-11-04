@@ -1,6 +1,6 @@
 # Brotwelten
 
-Ein Informatik-Schulprojekt von Rico, Til und Otto mit **genau neun eigenständigen HTML-Seiten** über sieben Brotsorten. Die Website verwendet ausschließlich HTML5 und CSS3.
+Ein gemeinsames Projekt von Rico, Til und Otto mit **genau neun eigenständigen HTML-Seiten** über sieben Brotsorten. Die Website verwendet ausschließlich HTML5 und CSS3.
 
 ## Starten
 

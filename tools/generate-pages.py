@@ -247,7 +247,7 @@ def credits():
 
 def about():
     members = [
-        ('Rico', 'Leading Developer', ''),
+        ('Rico', 'Leading Developer', 'Die technische Umsetzung geleitet und den Großteil der Website programmiert.'),
         ('Til', 'Bildrecherche & Designideen', 'Bilder ausgewählt, Designideen vorgeschlagen und bei der Programmierung mitgeholfen.'),
         ('Otto', 'Bildrecherche & Designideen', 'Bilder ausgewählt, Designideen vorgeschlagen und bei der Programmierung mitgeholfen.'),
     ]

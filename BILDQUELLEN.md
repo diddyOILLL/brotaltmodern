@@ -1,6 +1,6 @@
 # Bildquellen – Brotwelten
 
-Bilder heruntergeladen am 30. Oktober 2026. Zuletzt aufgerufen am 04.11.2026 (Bildquellen und Lizenzen).
+Bilder heruntergeladen am 30. Oktober 2026. Zuletzt aufgerufen am 12.11.2026 (Bildquellen und Lizenzen).
 
 Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; das Layout beschneidet sie mit `object-fit: cover`. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.
 
@@ -11,7 +11,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:Wei%C3%9Fbrot-1.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/2/2c/Wei%C3%9Fbrot-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1200 px.
 
 ## Roggenbrot
@@ -21,7 +21,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:100%25_Rye_Bread_%285752657009%29.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/2/2a/100%25_Rye_Bread_%285752657009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1067 px.
 
 ## Vollkornbrot
@@ -31,7 +31,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:Wholemeal_tin_loaf_%288370566283%29.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/8/8a/Wholemeal_tin_loaf_%288370566283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1067 px.
 
 ## Dinkelbrot
@@ -41,7 +41,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:Dinkelbrot_%284212924064%29.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/5/5a/Dinkelbrot_%284212924064%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1200 px.
 
 ## Baguette
@@ -51,7 +51,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:Baguettes.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/9/9b/Baguettes.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1052 px.
 
 ## Ciabatta
@@ -61,7 +61,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://commons.wikimedia.org/wiki/File:Ciabatta_Bread.jpg
 - Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/4/43/Ciabatta_Bread.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1600 × 1084 px.
 
 ## Sauerteigbrot
@@ -71,7 +71,7 @@ Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als 
 - Originalseite: https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU
 - Bilddatei der Quelle: https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2
 - Verwendete Lizenz: [Unsplash License](https://unsplash.com/license)
-- Zuletzt aufgerufen am 04.11.2026 (Originalseite und Lizenz).
+- Zuletzt aufgerufen am 12.11.2026 (Originalseite und Lizenz).
 - Optimierte große Fassung: 1800 × 2400 px.
 
 Das Sauerteigmotiv wird auf mehreren Seiten verwendet. Zu jedem Foto liegen eine kleine, eine mittlere und eine große WebP-Fassung vor; der Browser wählt die passende Größe.

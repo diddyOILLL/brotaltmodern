@@ -167,16 +167,15 @@ def page(slug, title, description, body):
 '''
     (ROOT / (slug + '.html')).write_text(document, encoding='utf-8')
 
-def image(slug, alt, cls='', lazy=True, small=False, wide=False):
+def image(slug, alt, cls='', lazy=True, small=False):
     meta = METADATA[slug]
-    sizes = '(max-width: 600px) calc(100vw - 46px), (max-width: 800px) calc(50vw - 41px), (max-width: 1100px) 29vw, 390px' if small and not wide else '(max-width: 600px) calc(100vw - 46px), 46vw'
-    if cls == 'about-banner':
-        sizes = '(max-width: 600px) calc(100vw - 46px), 90vw'
-    return f'<img class="{cls}" src="assets/images/{slug}{"-small" if small else ""}.webp" srcset="assets/images/{slug}-small.webp {meta["small_width"]}w, assets/images/{slug}-medium.webp {meta["medium_width"]}w, assets/images/{slug}.webp {meta["width"]}w" sizes="{sizes}" width="{meta["width"]}" height="{meta["height"]}" alt="{escape(alt, quote=True)}" {"loading=\"lazy\"" if lazy else "fetchpriority=\"high\""} decoding="async">'
+    width = 180 if small else 220
+    height = round(width * meta["height"] / meta["width"])
+    return f'<img class="{cls}" src="assets/images/{slug}{"-small" if small else ""}.webp" srcset="assets/images/{slug}-small.webp {meta["small_width"]}w, assets/images/{slug}-medium.webp {meta["medium_width"]}w, assets/images/{slug}.webp {meta["width"]}w" sizes="{width}px" width="{width}" height="{height}" alt="{escape(alt, quote=True)}" {"loading=\"lazy\"" if lazy else "fetchpriority=\"high\""} decoding="async">'
 
 def card(b, i):
     return f'''<article class="bread-card{' featured' if i == 6 else ''}">
-          <a class="card-photo" href="{b['slug']}.html" aria-label="{b['name']} entdecken">{image(b['slug'], b['alt'], small=True, wide=i == 6)}<span class="card-index" aria-hidden="true">0{i+1}</span></a>
+          <a class="card-photo" href="{b['slug']}.html" aria-label="{b['name']} entdecken">{image(b['slug'], b['alt'], small=True)}<span class="card-index" aria-hidden="true">0{i+1}</span></a>
           <div class="card-copy"><p class="image-source-note"><a href="ueber-uns.html#bildnachweise">Bildquelle</a> · {SOURCE_ACCESS_HTML}</p><div class="card-meta"><span>{b['region']}</span><span>{b['category_label']}</span></div>
           <h3><a href="{b['slug']}.html">{b['name']}</a></h3><p>{b['short']}</p><a class="text-link" href="{b['slug']}.html" aria-label="Mehr über {b['name']} erfahren">Mehr erfahren {ARROW}</a></div>
         </article>'''

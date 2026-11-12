@@ -9,9 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ACCESS_DATE = date(2026, 11, 4)
 SOURCE_ACCESS_TEXT = 'Zuletzt aufgerufen am ' + SOURCE_ACCESS_DATE.strftime('%d.%m.%Y')
 SOURCE_ACCESS_HTML = f'Zuletzt aufgerufen am <time datetime="{SOURCE_ACCESS_DATE.isoformat()}">{SOURCE_ACCESS_DATE.strftime("%d.%m.%Y")}</time>'
-ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>'
-DOWN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>'
-DIAGONAL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>'
+ARROW = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>'
+DOWN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>'
+DIAGONAL = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>'
 
 BREADS = [
   dict(slug='weizenbrot', name='Weizenbrot', region='Vielseitiger Klassiker', origin='Vorderasien · weltweit', grain='Weizen', taste='Mild & fein', category_label='Mild & luftig',
@@ -155,9 +155,6 @@ def page(slug, title, description, body):
   <meta name="theme-color" content="#F8F5EF">
   <title>{title}</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/libre-caslon-display-400.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="assets/css/fonts.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body id="seitenanfang">
   {header(slug)}

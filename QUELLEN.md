@@ -25,3 +25,4 @@ Die folgenden konkreten Rezeptseiten wurden bei der Recherche über Chefkoch-Suc
 - Sauerteigbrot: [BZfE: Was machen Hefe und Sauerteig?](https://www.bzfe.de/presse/pressemeldungen-archiv/was-machen-eigentlich-hefe-und-sauerteig) – Zuletzt aufgerufen am 04.11.2026.
 
 Die Herkunft vieler Brottraditionen lässt sich nicht auf einen einzelnen Ort oder Erfinder zurückführen. Entsprechend sind die historischen Texte zurückhaltend formuliert. Die sieben Porträts sind keine überschneidungsfreien Kategorien: Ein Brot kann zum Beispiel zugleich Dinkel-, Vollkorn- und Sauerteigbrot sein.
+

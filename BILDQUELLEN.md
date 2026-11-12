@@ -82,3 +82,4 @@ Das Sauerteigmotiv wird auf mehreren Seiten verwendet. Zu jedem Foto liegen eine
 - Bezogen über Google Fonts, lokal eingebunden. SIL Open Font License 1.1; Lizenzdateien unter `assets/fonts/`.
 
 Das kleine typografische Favicon ist projektintern als SVG angelegt; es enthält kein Brotfoto.
+

@@ -2,7 +2,7 @@
 
 Aktuelle Bilder heruntergeladen am 24. November 2026. Zuletzt aufgerufen am 24.11.2026 (Bildquellen und Lizenzen).
 
-Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; die Fotos wurden nicht beschnitten. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.
+Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; die Fotos wurden nicht beschnitten. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `quellen.html#bildnachweise` verlinkt.
 
 ## Weizenbrot
 - Dateien: `assets/images/weizenbrot.webp`, `assets/images/weizenbrot-small.webp`, `assets/images/weizenbrot-medium.webp`

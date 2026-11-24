@@ -1,78 +1,78 @@
 # Bildquellen – Brotwelten
 
-Bilder heruntergeladen am 30. Oktober 2026. Zuletzt aufgerufen am 24.11.2026 (Bildquellen und Lizenzen).
+Aktuelle Bilder heruntergeladen am 24. November 2026. Zuletzt aufgerufen am 24.11.2026 (Bildquellen und Lizenzen).
 
-Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; das Layout beschneidet sie mit `object-fit: cover`. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.
+Ausschließlich echte Fotografien. Originalaufnahmen wurden verkleinert und als WebP komprimiert; die Fotos wurden nicht beschnitten. Die unten angegebene Lizenz gilt jeweils auch für die optimierte Bildfassung. Fotografen, Originalseiten und Lizenzen sind zusätzlich auf `ueber-uns.html#bildnachweise` verlinkt.
 
 ## Weizenbrot
 - Dateien: `assets/images/weizenbrot.webp`, `assets/images/weizenbrot-small.webp`, `assets/images/weizenbrot-medium.webp`
-- Originaltitel: Weißbrot-1.jpg
-- Urheber: Rainer Zenz
-- Originalseite: https://commons.wikimedia.org/wiki/File:Wei%C3%9Fbrot-1.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/2/2c/Wei%C3%9Fbrot-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
-- Verwendete Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Originaltitel: Homemade white bread.jpg
+- Urheber: Chamba27
+- Originalseite: https://commons.wikimedia.org/wiki/File:Homemade_white_bread.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/2/25/Homemade_white_bread.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1200 px.
+- Optimierte große Fassung: 960 × 1280 px.
 
 ## Roggenbrot
 - Dateien: `assets/images/roggenbrot.webp`, `assets/images/roggenbrot-small.webp`, `assets/images/roggenbrot-medium.webp`
-- Originaltitel: 100% Rye Bread (5752657009).jpg
-- Urheber: Veganbaking.net from USA
-- Originalseite: https://commons.wikimedia.org/wiki/File:100%25_Rye_Bread_%285752657009%29.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/2/2a/100%25_Rye_Bread_%285752657009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
-- Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Originaltitel: Roggenbrot2.jpg
+- Urheber: 00overtime
+- Originalseite: https://commons.wikimedia.org/wiki/File:Roggenbrot2.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/9/9b/Roggenbrot2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1067 px.
+- Optimierte große Fassung: 960 × 640 px.
 
 ## Vollkornbrot
 - Dateien: `assets/images/vollkornbrot.webp`, `assets/images/vollkornbrot-small.webp`, `assets/images/vollkornbrot-medium.webp`
-- Originaltitel: Wholemeal tin loaf (8370566283).jpg
-- Urheber: muffinn from Worcester, UK
-- Originalseite: https://commons.wikimedia.org/wiki/File:Wholemeal_tin_loaf_%288370566283%29.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/8/8a/Wholemeal_tin_loaf_%288370566283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
-- Verwendete Lizenz: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Originaltitel: Whole wheat bread1.jpg
+- Urheber: GOLANYASSAF
+- Originalseite: https://commons.wikimedia.org/wiki/File:Whole_wheat_bread1.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/3/3c/Whole_wheat_bread1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1067 px.
+- Optimierte große Fassung: 960 × 720 px.
 
 ## Dinkelbrot
 - Dateien: `assets/images/dinkelbrot.webp`, `assets/images/dinkelbrot-small.webp`, `assets/images/dinkelbrot-medium.webp`
-- Originaltitel: Dinkelbrot (4212924064).jpg
-- Urheber: Katrin Gilger
-- Originalseite: https://commons.wikimedia.org/wiki/File:Dinkelbrot_%284212924064%29.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/5/5a/Dinkelbrot_%284212924064%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
-- Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Originaltitel: Dinkelbrot-3.jpg
+- Urheber: MartinThoma
+- Originalseite: https://commons.wikimedia.org/wiki/File:Dinkelbrot-3.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/7/7f/Dinkelbrot-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1200 px.
+- Optimierte große Fassung: 960 × 720 px.
 
 ## Baguette
 - Dateien: `assets/images/baguette.webp`, `assets/images/baguette-small.webp`, `assets/images/baguette-medium.webp`
-- Originaltitel: Baguettes.jpg
-- Urheber: Kathryn Cartwright, edycja: niedzielny leń
-- Originalseite: https://commons.wikimedia.org/wiki/File:Baguettes.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/9/9b/Baguettes.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
-- Verwendete Lizenz: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Originaltitel: Bread-breakfast-baguette-sliced (24244220141).jpg
+- Urheber: www.Pixel.la Free Stock Photos
+- Originalseite: https://commons.wikimedia.org/wiki/File:Bread-breakfast-baguette-sliced_%2824244220141%29.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/6/67/Bread-breakfast-baguette-sliced_%2824244220141%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1052 px.
+- Optimierte große Fassung: 960 × 640 px.
 
 ## Ciabatta
 - Dateien: `assets/images/ciabatta.webp`, `assets/images/ciabatta-small.webp`, `assets/images/ciabatta-medium.webp`
-- Originaltitel: Ciabatta Bread.jpg
-- Urheber: Key West Wedding Photography
-- Originalseite: https://commons.wikimedia.org/wiki/File:Ciabatta_Bread.jpg
-- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/4/43/Ciabatta_Bread.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Originaltitel: Ciabatta (4202043675).jpg
+- Urheber: Arnold Gatilao from Oakland, CA, USA
+- Originalseite: https://commons.wikimedia.org/wiki/File:Ciabatta_%284202043675%29.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/0/0c/Ciabatta_%284202043675%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
 - Verwendete Lizenz: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1600 × 1084 px.
+- Optimierte große Fassung: 960 × 549 px.
 
 ## Sauerteigbrot
 - Dateien: `assets/images/sauerteigbrot.webp`, `assets/images/sauerteigbrot-small.webp`, `assets/images/sauerteigbrot-medium.webp`
-- Originaltitel: Sourdough loaf
-- Urheber: Vicky Ng
-- Originalseite: https://unsplash.com/photos/bread-on-brown-wooden-table-yL9qjDDmmMU
-- Bilddatei der Quelle: https://images.unsplash.com/photo-1590301157172-7ba48dd1c2b2
-- Verwendete Lizenz: [Unsplash License](https://unsplash.com/license)
+- Originaltitel: Sourdough bread.jpg
+- Urheber: Anasuyas
+- Originalseite: https://commons.wikimedia.org/wiki/File:Sourdough_bread.jpg
+- Bilddatei der Quelle: https://upload.wikimedia.org/wikipedia/commons/3/3c/Sourdough_bread.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+- Verwendete Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Zuletzt aufgerufen am 24.11.2026 (Originalseite und Lizenz).
-- Optimierte große Fassung: 1800 × 2400 px.
+- Optimierte große Fassung: 960 × 720 px.
 
 Das Sauerteigmotiv wird auf mehreren Seiten verwendet. Zu jedem Foto liegen eine kleine, eine mittlere und eine große WebP-Fassung vor; der Browser wählt die passende Größe.
 
